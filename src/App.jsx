@@ -10,7 +10,8 @@ const Card = ({title}) => {
 
             <button
                 onClick={() => setHasLiked(!hasLiked)}
-                style={{color: hasLiked ? '#ff0000' : '#ffffff'}}>
+                style={{color: hasLiked ? '#ff0000' : '#ffffff'}}
+                aria-label={hasLiked ? 'Unlike' : 'Like'}>
                 ♥
             </button>
         </div>
