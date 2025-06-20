@@ -1,11 +1,19 @@
 import './App.css'
+import {useState} from "react";
 
 const Card = ({title}) => {
+    const [hasLiked, setHasLiked] = useState(false);
+
     return (
         <div className="card">
-            <h2>
-                {title}
-            </h2>
+            <h2>{title}</h2>
+
+            <button
+                onClick={() => setHasLiked(!hasLiked)}
+                style={{color: hasLiked ? '#ff0000' : '#ffffff'}}
+                aria-label={hasLiked ? 'Unlike' : 'Like'}>
+                ♥
+            </button>
         </div>
     )
 }
