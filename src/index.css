@@ -127,7 +127,7 @@
         }
 
         & .rating img {
-            @apply size-4 object-contain;
+            @apply w-4 h-4 object-contain;
         }
 
         & .rating p {
