@@ -3,8 +3,10 @@
 
 @import "tailwindcss";
 
-* {
+.pattern {
     background-image: url("/hero-bg.png");
+    background-size: cover;
+    background-position: center;
 }
 
 @theme {
