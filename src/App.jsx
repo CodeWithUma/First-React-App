@@ -73,7 +73,7 @@ const App = () => {
                     ) : (
                         <ul>
                             {movieList.map((movie) => (
-                                <p key={movie.id} className="text-white">{movie.title}</p>
+                                <li key={movie.id} className="text-white">{movie.title}</li>
                             ))}
                         </ul>
                     )}
